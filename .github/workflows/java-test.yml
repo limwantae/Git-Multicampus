@@ -17,13 +17,14 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 11
+          distribution: 'temurin'
 
       - name: Build with Maven
         run: mvn clean install
 
       - name: Run tests
         run: mvn test
-        
+
       - name: Run Static Code Analysis
         run: mvn spotbugs:check
 
