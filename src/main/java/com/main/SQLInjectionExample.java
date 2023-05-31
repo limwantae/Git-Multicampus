@@ -6,7 +6,7 @@ public class SQLInjectionExample {
             String query = "SELECT * FROM users WHERE username = '" + username + "'";
             // query 실행 로직
         }
- 
+  
         private static String getUserInput() {
             // 사용자로부터 입력 받는 로직
             return "TEST";
